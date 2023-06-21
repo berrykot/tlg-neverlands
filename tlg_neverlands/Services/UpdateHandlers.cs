@@ -140,7 +140,7 @@ public class UpdateHandlers
 
         static async Task<Message> SendFile(ITelegramBotClient botClient, Message message, CancellationToken cancellationToken)
         {
-            await botClient.SendChatActionAsync(
+            /*await botClient.SendChatActionAsync(
                 message.Chat.Id,
                 ChatAction.UploadPhoto,
                 cancellationToken: cancellationToken);
@@ -153,6 +153,11 @@ public class UpdateHandlers
                 chatId: message.Chat.Id,
                 photo: new InputFileStream(fileStream, fileName),
                 caption: "Nice Picture",
+                cancellationToken: cancellationToken);*/
+            
+            return await botClient.SendTextMessageAsync(
+                chatId: message.Chat.Id,
+                text: "Картинки увы нет",
                 cancellationToken: cancellationToken);
         }
 
