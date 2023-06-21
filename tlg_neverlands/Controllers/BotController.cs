@@ -5,7 +5,6 @@ using tlg_neverlands.Services;
 
 namespace tlg_neverlands.Controllers;
 
-[ApiController]
 public class BotController : ControllerBase
 {
     private readonly ILogger<BotController> _logger;
@@ -15,13 +14,6 @@ public class BotController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet]
-    public string Get()
-    {
-        _logger.LogInformation("Lalala");
-        return "Hello world";
-    }
-    
     [HttpPost]
     [ValidateTelegramBot]
     public async Task<IActionResult> Post(

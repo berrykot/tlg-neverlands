@@ -24,7 +24,7 @@ public sealed class ValidateTelegramBotAttribute : TypeFilterAttribute
         public ValidateTelegramBotFilter(IOptions<BotConfiguration> options)
         {
             var botConfiguration = options.Value;
-            //_secretToken = botConfiguration.SecretToken;
+            _secretToken = botConfiguration.SecretToken;
         }
 
         public void OnActionExecuted(ActionExecutedContext context)
