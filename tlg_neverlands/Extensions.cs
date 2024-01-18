@@ -1,5 +1,3 @@
-using Microsoft.Extensions.Options;
-
 namespace tlg_neverlands;
 
 public static class WebHookExtensions

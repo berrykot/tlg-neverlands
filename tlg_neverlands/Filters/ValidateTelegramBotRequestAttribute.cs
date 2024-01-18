@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.Extensions.Options;
-using tlg_neverlands.Models;
-
 namespace tlg_neverlands.Filters;
 
 /// <summary>

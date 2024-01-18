@@ -1,8 +1,3 @@
-using Microsoft.Extensions.Options;
-using Telegram.Bot;
-using Telegram.Bot.Types.Enums;
-using tlg_neverlands.Models;
-
 namespace tlg_neverlands.Services;
 
 public class ConfigureWebhook : IHostedService

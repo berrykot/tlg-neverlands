@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Telegram.Bot.Types;
-using tlg_neverlands.Filters;
-using tlg_neverlands.Services;
-
 namespace tlg_neverlands.Controllers;
 
 public class BotController : ControllerBase
